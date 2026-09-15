@@ -16,7 +16,7 @@ namespace Tanss.Api.Rest.Api.V1.ManagementDashboard.Collections.Item.Charts.Item
     {
         /// <summary>Stores additional data not described in the OpenAPI description found when deserializing. Can be used for serialization as well.</summary>
         public IDictionary<string, object> AdditionalData { get; set; }
-        /// <summary>Filter eines Dashboard-Charts. DOUGHNUT: incomingTags + sortingTags; FUNNEL: incomingTags + stages.Die Elementtypen der Arrays sind nicht analysiert (vermutlich Tag-IDs bzw. Stufen-Objekte).</summary>
+        /// <summary>Filter eines Dashboard-Charts. DOUGHNUT: incomingTags + sortingTags; FUNNEL: incomingTags + stages.Die Elementtypen der Arrays sind nicht dokumentiert (vermutlich Tag-IDs bzw. Stufen-Objekte).</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
         public global::Tanss.Api.Rest.Models.TnsManagementDashboardChartFilter? Filter { get; set; }

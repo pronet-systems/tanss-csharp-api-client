@@ -15,7 +15,7 @@ namespace Tanss.Api.Rest.Api.V1.Mails.PortalSendReasons.Item
     {
         /// <summary>Stores additional data not described in the OpenAPI description found when deserializing. Can be used for serialization as well.</summary>
         public IDictionary<string, object> AdditionalData { get; set; }
-        /// <summary>Portal-Versandgrund (Entität des TnsPortalSendReasonAdminController). Felder nicht analysiert.</summary>
+        /// <summary>Portal-Versandgrund (Verwaltungsobjekt). Die Felder sind nicht dokumentiert.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
         public global::Tanss.Api.Rest.Models.TnsPortalSendReason? Content { get; set; }

@@ -33,8 +33,7 @@ namespace Tanss.Api.Rest.Api.TanssX.V1.Checklists
         {
         }
         /// <summary>
-        /// Liefert alle aktiven Checklisten-Definitionen (Typ CHECKLIST), die keiner bestimmten Firma zugeordnet sind.Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP.Hinweis: Auch unter /api/tanss.app/v1. linkId=0 (Definitionen), type=CHECKLIST, active=true; Checklisten mit Firmenzuordnung werden ausgeschlossen, da keine companyId/departmentId übergeben wird. Kein Rechte-Check im Controller sichtbar.
-        /// </summary>
+        /// Liefert alle aktiven Checklisten-Definitionen (Typ CHECKLIST), die keiner bestimmten Firma zugeordnet sind.Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP.Hinweis: Auch unter /api/tanss.app/v1. linkId=0 (Definitionen), type=CHECKLIST, active=true; Checklisten mit Firmenzuordnung werden ausgeschlossen, da keine companyId/departmentId übergeben wird. Eine eigene Rechteprüfung ist nicht dokumentiert. /// </summary>
         /// <returns>A <see cref="global::Tanss.Api.Rest.Api.TanssX.V1.Checklists.ChecklistsGetResponse"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
@@ -51,8 +50,7 @@ namespace Tanss.Api.Rest.Api.TanssX.V1.Checklists
             return await RequestAdapter.SendAsync<global::Tanss.Api.Rest.Api.TanssX.V1.Checklists.ChecklistsGetResponse>(requestInfo, global::Tanss.Api.Rest.Api.TanssX.V1.Checklists.ChecklistsGetResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
-        /// Liefert alle aktiven Checklisten-Definitionen (Typ CHECKLIST), die keiner bestimmten Firma zugeordnet sind.Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP.Hinweis: Auch unter /api/tanss.app/v1. linkId=0 (Definitionen), type=CHECKLIST, active=true; Checklisten mit Firmenzuordnung werden ausgeschlossen, da keine companyId/departmentId übergeben wird. Kein Rechte-Check im Controller sichtbar.
-        /// </summary>
+        /// Liefert alle aktiven Checklisten-Definitionen (Typ CHECKLIST), die keiner bestimmten Firma zugeordnet sind.Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP.Hinweis: Auch unter /api/tanss.app/v1. linkId=0 (Definitionen), type=CHECKLIST, active=true; Checklisten mit Firmenzuordnung werden ausgeschlossen, da keine companyId/departmentId übergeben wird. Eine eigene Rechteprüfung ist nicht dokumentiert. /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER

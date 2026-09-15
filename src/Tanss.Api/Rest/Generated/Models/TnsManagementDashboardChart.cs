@@ -17,7 +17,7 @@ namespace Tanss.Api.Rest.Models
         public IDictionary<string, object> AdditionalData { get; set; }
         /// <summary>ID der zugehörigen Collection</summary>
         public int? CollectionId { get; set; }
-        /// <summary>Filter eines Dashboard-Charts. DOUGHNUT: incomingTags + sortingTags; FUNNEL: incomingTags + stages.Die Elementtypen der Arrays sind nicht analysiert (vermutlich Tag-IDs bzw. Stufen-Objekte).</summary>
+        /// <summary>Filter eines Dashboard-Charts. DOUGHNUT: incomingTags + sortingTags; FUNNEL: incomingTags + stages.Die Elementtypen der Arrays sind nicht dokumentiert (vermutlich Tag-IDs bzw. Stufen-Objekte).</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
         public global::Tanss.Api.Rest.Models.TnsManagementDashboardChartFilter? Filter { get; set; }

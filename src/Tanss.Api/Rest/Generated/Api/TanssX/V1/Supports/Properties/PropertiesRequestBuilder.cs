@@ -34,7 +34,7 @@ namespace Tanss.Api.Rest.Api.TanssX.V1.Supports.Properties
         {
         }
         /// <summary>
-        /// Berechnet abhängige Eigenschaften/Vorschlagswerte für einen (noch nicht gespeicherten) Support (Alias zu POST /api/v1/supports/properties).Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP.Hinweis: Auch unter /api/tanss.app/v1. Query changedProperty (Default &quot;&quot;): Name des geänderten Feldes; initAllFields (Default false): alle Felder neu initialisieren. Logik im Service nicht geöffnet; keine Rechte-Konstanten sichtbar.
+        /// Berechnet abhängige Eigenschaften/Vorschlagswerte für einen (noch nicht gespeicherten) Support (Alias zu POST /api/v1/supports/properties).Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP.Hinweis: Auch unter /api/tanss.app/v1. Query changedProperty (Default &quot;&quot;): Name des geänderten Feldes; initAllFields (Default false): alle Felder neu initialisieren. Die Logik und die nötigen Rechte sind nicht dokumentiert.
         /// </summary>
         /// <returns>A <see cref="global::Tanss.Api.Rest.Api.TanssX.V1.Supports.Properties.PropertiesPostResponse"/></returns>
         /// <param name="body">The request body</param>
@@ -54,7 +54,7 @@ namespace Tanss.Api.Rest.Api.TanssX.V1.Supports.Properties
             return await RequestAdapter.SendAsync<global::Tanss.Api.Rest.Api.TanssX.V1.Supports.Properties.PropertiesPostResponse>(requestInfo, global::Tanss.Api.Rest.Api.TanssX.V1.Supports.Properties.PropertiesPostResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
-        /// Berechnet abhängige Eigenschaften/Vorschlagswerte für einen (noch nicht gespeicherten) Support (Alias zu POST /api/v1/supports/properties).Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP.Hinweis: Auch unter /api/tanss.app/v1. Query changedProperty (Default &quot;&quot;): Name des geänderten Feldes; initAllFields (Default false): alle Felder neu initialisieren. Logik im Service nicht geöffnet; keine Rechte-Konstanten sichtbar.
+        /// Berechnet abhängige Eigenschaften/Vorschlagswerte für einen (noch nicht gespeicherten) Support (Alias zu POST /api/v1/supports/properties).Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP.Hinweis: Auch unter /api/tanss.app/v1. Query changedProperty (Default &quot;&quot;): Name des geänderten Feldes; initAllFields (Default false): alle Felder neu initialisieren. Die Logik und die nötigen Rechte sind nicht dokumentiert.
         /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
         /// <param name="body">The request body</param>
@@ -85,7 +85,7 @@ namespace Tanss.Api.Rest.Api.TanssX.V1.Supports.Properties
             return new global::Tanss.Api.Rest.Api.TanssX.V1.Supports.Properties.PropertiesRequestBuilder(rawUrl, RequestAdapter);
         }
         /// <summary>
-        /// Berechnet abhängige Eigenschaften/Vorschlagswerte für einen (noch nicht gespeicherten) Support (Alias zu POST /api/v1/supports/properties).Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP.Hinweis: Auch unter /api/tanss.app/v1. Query changedProperty (Default &quot;&quot;): Name des geänderten Feldes; initAllFields (Default false): alle Felder neu initialisieren. Logik im Service nicht geöffnet; keine Rechte-Konstanten sichtbar.
+        /// Berechnet abhängige Eigenschaften/Vorschlagswerte für einen (noch nicht gespeicherten) Support (Alias zu POST /api/v1/supports/properties).Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP.Hinweis: Auch unter /api/tanss.app/v1. Query changedProperty (Default &quot;&quot;): Name des geänderten Feldes; initAllFields (Default false): alle Felder neu initialisieren. Die Logik und die nötigen Rechte sind nicht dokumentiert.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
         public partial class PropertiesRequestBuilderPostQueryParameters 

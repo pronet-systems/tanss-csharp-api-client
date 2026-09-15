@@ -33,7 +33,7 @@ namespace Tanss.Api.Rest.Api.TanssApp.V1.Supports.Item
         {
         }
         /// <summary>
-        /// Loescht eine Taetigkeit/Termin (wie DELETE /api/v1/supports/{id}); mit discardOnSupport=true wird bei bereits in eine Taetigkeit umgewandelten Terminen (planningType SUPPORT) nicht geloescht, sondern 403 CHANGES_WERE_DISCARDED geworfen. Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP. Hinweise: Loeschrechte nicht analysiert. Status DELETED. Auch unter /api/tanss.x/v1.
+        /// Loescht eine Taetigkeit/Termin (wie DELETE /api/v1/supports/{id}); mit discardOnSupport=true wird bei bereits in eine Taetigkeit umgewandelten Terminen (planningType SUPPORT) nicht geloescht, sondern 403 CHANGES_WERE_DISCARDED geworfen. Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP. Hinweise: Die nötigen Rechte sind nicht dokumentiert. Status DELETED. Auch unter /api/tanss.x/v1.
         /// </summary>
         /// <returns>A <see cref="global::Tanss.Api.Rest.Api.TanssApp.V1.Supports.Item.WithSupportDeleteResponse"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
@@ -51,7 +51,7 @@ namespace Tanss.Api.Rest.Api.TanssApp.V1.Supports.Item
             return await RequestAdapter.SendAsync<global::Tanss.Api.Rest.Api.TanssApp.V1.Supports.Item.WithSupportDeleteResponse>(requestInfo, global::Tanss.Api.Rest.Api.TanssApp.V1.Supports.Item.WithSupportDeleteResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
-        /// Liefert eine Taetigkeit (wie GET /api/v1/supports/{id} ohne sequenceId), zusaetzlich mit Firmenadresse in den linkedEntities (Option ADD_COMPANY_ADDRESS). Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP. Hinweise: 404 OBJECT_NOT_FOUND. Leserechte nicht analysiert. Auch unter /api/tanss.x/v1.
+        /// Liefert eine Taetigkeit (wie GET /api/v1/supports/{id} ohne sequenceId), zusaetzlich mit Firmenadresse in den linkedEntities (Option ADD_COMPANY_ADDRESS). Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP. Hinweise: 404 OBJECT_NOT_FOUND. Die nötigen Rechte sind nicht dokumentiert. Auch unter /api/tanss.x/v1.
         /// </summary>
         /// <returns>A <see cref="global::Tanss.Api.Rest.Api.TanssApp.V1.Supports.Item.WithSupportGetResponse"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
@@ -89,7 +89,7 @@ namespace Tanss.Api.Rest.Api.TanssApp.V1.Supports.Item
             return await RequestAdapter.SendAsync<global::Tanss.Api.Rest.Api.TanssApp.V1.Supports.Item.WithSupportPutResponse>(requestInfo, global::Tanss.Api.Rest.Api.TanssApp.V1.Supports.Item.WithSupportPutResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
-        /// Loescht eine Taetigkeit/Termin (wie DELETE /api/v1/supports/{id}); mit discardOnSupport=true wird bei bereits in eine Taetigkeit umgewandelten Terminen (planningType SUPPORT) nicht geloescht, sondern 403 CHANGES_WERE_DISCARDED geworfen. Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP. Hinweise: Loeschrechte nicht analysiert. Status DELETED. Auch unter /api/tanss.x/v1.
+        /// Loescht eine Taetigkeit/Termin (wie DELETE /api/v1/supports/{id}); mit discardOnSupport=true wird bei bereits in eine Taetigkeit umgewandelten Terminen (planningType SUPPORT) nicht geloescht, sondern 403 CHANGES_WERE_DISCARDED geworfen. Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP. Hinweise: Die nötigen Rechte sind nicht dokumentiert. Status DELETED. Auch unter /api/tanss.x/v1.
         /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
@@ -108,7 +108,7 @@ namespace Tanss.Api.Rest.Api.TanssApp.V1.Supports.Item
             return requestInfo;
         }
         /// <summary>
-        /// Liefert eine Taetigkeit (wie GET /api/v1/supports/{id} ohne sequenceId), zusaetzlich mit Firmenadresse in den linkedEntities (Option ADD_COMPANY_ADDRESS). Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP. Hinweise: 404 OBJECT_NOT_FOUND. Leserechte nicht analysiert. Auch unter /api/tanss.x/v1.
+        /// Liefert eine Taetigkeit (wie GET /api/v1/supports/{id} ohne sequenceId), zusaetzlich mit Firmenadresse in den linkedEntities (Option ADD_COMPANY_ADDRESS). Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP. Hinweise: 404 OBJECT_NOT_FOUND. Die nötigen Rechte sind nicht dokumentiert. Auch unter /api/tanss.x/v1.
         /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
@@ -158,7 +158,7 @@ namespace Tanss.Api.Rest.Api.TanssApp.V1.Supports.Item
             return new global::Tanss.Api.Rest.Api.TanssApp.V1.Supports.Item.WithSupportItemRequestBuilder(rawUrl, RequestAdapter);
         }
         /// <summary>
-        /// Loescht eine Taetigkeit/Termin (wie DELETE /api/v1/supports/{id}); mit discardOnSupport=true wird bei bereits in eine Taetigkeit umgewandelten Terminen (planningType SUPPORT) nicht geloescht, sondern 403 CHANGES_WERE_DISCARDED geworfen. Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP. Hinweise: Loeschrechte nicht analysiert. Status DELETED. Auch unter /api/tanss.x/v1.
+        /// Loescht eine Taetigkeit/Termin (wie DELETE /api/v1/supports/{id}); mit discardOnSupport=true wird bei bereits in eine Taetigkeit umgewandelten Terminen (planningType SUPPORT) nicht geloescht, sondern 403 CHANGES_WERE_DISCARDED geworfen. Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP. Hinweise: Die nötigen Rechte sind nicht dokumentiert. Status DELETED. Auch unter /api/tanss.x/v1.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
         public partial class WithSupportItemRequestBuilderDeleteQueryParameters 

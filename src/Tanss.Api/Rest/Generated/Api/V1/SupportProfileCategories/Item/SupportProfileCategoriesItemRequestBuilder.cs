@@ -33,7 +33,7 @@ namespace Tanss.Api.Rest.Api.V1.SupportProfileCategories.Item
         {
         }
         /// <summary>
-        /// Generischer Admin-Endpunkt (Basisklasse TnsAdminBaseController): löscht die Support-Profil-Kategorie anhand des Schlüssels.Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: general, Rollen USER. TANSS_APP-Token nur mit loggedInUserId.Rechte: abhängig von den Hooks der konkreten Service-Klasse.Hinweise: Ablauf akf.long(id): Permission-Hooks, Prüf-Hook auf der Entität, ENTITY_NOT_FOUND wenn unbekannt. meta DELETED.
+        /// Generischer Admin-Endpunkt (generischer Verwaltungsendpunkt): löscht die Support-Profil-Kategorie anhand des Schlüssels.Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: general, Rollen USER. TANSS_APP-Token nur mit loggedInUserId.Rechte: abhängig von den Hooks der konkreten Service-Klasse.Hinweise: Ablauf akf.long(id): Permission-Hooks, Prüf-Hook auf der Entität, ENTITY_NOT_FOUND wenn unbekannt. meta DELETED.
         /// </summary>
         /// <returns>A <see cref="global::Tanss.Api.Rest.Api.V1.SupportProfileCategories.Item.SupportProfileCategoriesDeleteResponse"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
@@ -51,7 +51,7 @@ namespace Tanss.Api.Rest.Api.V1.SupportProfileCategories.Item
             return await RequestAdapter.SendAsync<global::Tanss.Api.Rest.Api.V1.SupportProfileCategories.Item.SupportProfileCategoriesDeleteResponse>(requestInfo, global::Tanss.Api.Rest.Api.V1.SupportProfileCategories.Item.SupportProfileCategoriesDeleteResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
-        /// Generischer Admin-Endpunkt (Basisklasse TnsAdminBaseController): liefert die Support-Profil-Kategorie anhand des Schlüssels.Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: general, Rollen USER. TANSS_APP-Token nur mit loggedInUserId.Rechte: Firmenzugriffsprüfung falls ITnsCompanyAssignable (FORBIDDEN_NO_COMPANY_ACCESS); weitere Hooks der Service-Klasse.Hinweise: OBJECT_NOT_FOUND wenn unbekannt; ggf. Filterstrategien. Felder der Entität nicht analysiert. meta FOUND.
+        /// Generischer Admin-Endpunkt (generischer Verwaltungsendpunkt): liefert die Support-Profil-Kategorie anhand des Schlüssels.Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: general, Rollen USER. TANSS_APP-Token nur mit loggedInUserId.Rechte: Firmenzugriffsprüfung falls ITnsCompanyAssignable (FORBIDDEN_NO_COMPANY_ACCESS); weitere Hooks der Service-Klasse.Hinweise: OBJECT_NOT_FOUND wenn unbekannt; ggf. Filterstrategien. Felder der Entität nicht dokumentiert. meta FOUND.
         /// </summary>
         /// <returns>A <see cref="global::Tanss.Api.Rest.Api.V1.SupportProfileCategories.Item.SupportProfileCategoriesGetResponse"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
@@ -69,7 +69,7 @@ namespace Tanss.Api.Rest.Api.V1.SupportProfileCategories.Item
             return await RequestAdapter.SendAsync<global::Tanss.Api.Rest.Api.V1.SupportProfileCategories.Item.SupportProfileCategoriesGetResponse>(requestInfo, global::Tanss.Api.Rest.Api.V1.SupportProfileCategories.Item.SupportProfileCategoriesGetResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
-        /// Generischer Admin-Endpunkt (Basisklasse TnsAdminBaseController): aktualisiert die Support-Profil-Kategorie per JSON-Teilupdate.Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: general, Rollen USER. TANSS_APP-Token nur mit loggedInUserId.Rechte: Hooks der Service-Klasse; Standard Firmenzugriffsprüfung bei ITnsCompanyAssignable.Hinweise: &apos;id&apos; wird vor dem Merge entfernt. ENTITY_NOT_FOUND wenn unbekannt, leeres JSON -&gt; TnsJsonException, Merge via Jackson readerForUpdating, Speichern mit Diff-Logging. meta UPDATED.
+        /// Generischer Admin-Endpunkt (generischer Verwaltungsendpunkt): aktualisiert die Support-Profil-Kategorie per JSON-Teilupdate.Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: general, Rollen USER. TANSS_APP-Token nur mit loggedInUserId.Rechte: Hooks der Service-Klasse; Standard Firmenzugriffsprüfung bei ITnsCompanyAssignable.Hinweise: &apos;id&apos; wird vor dem Merge entfernt. ENTITY_NOT_FOUND wenn unbekannt, leeres JSON -&gt; TnsJsonException, Merge via Jackson readerForUpdating, Speichern mit Diff-Logging. meta UPDATED.
         /// </summary>
         /// <returns>A <see cref="global::Tanss.Api.Rest.Api.V1.SupportProfileCategories.Item.SupportProfileCategoriesPutResponse"/></returns>
         /// <param name="body">The request body</param>
@@ -89,7 +89,7 @@ namespace Tanss.Api.Rest.Api.V1.SupportProfileCategories.Item
             return await RequestAdapter.SendAsync<global::Tanss.Api.Rest.Api.V1.SupportProfileCategories.Item.SupportProfileCategoriesPutResponse>(requestInfo, global::Tanss.Api.Rest.Api.V1.SupportProfileCategories.Item.SupportProfileCategoriesPutResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
-        /// Generischer Admin-Endpunkt (Basisklasse TnsAdminBaseController): löscht die Support-Profil-Kategorie anhand des Schlüssels.Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: general, Rollen USER. TANSS_APP-Token nur mit loggedInUserId.Rechte: abhängig von den Hooks der konkreten Service-Klasse.Hinweise: Ablauf akf.long(id): Permission-Hooks, Prüf-Hook auf der Entität, ENTITY_NOT_FOUND wenn unbekannt. meta DELETED.
+        /// Generischer Admin-Endpunkt (generischer Verwaltungsendpunkt): löscht die Support-Profil-Kategorie anhand des Schlüssels.Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: general, Rollen USER. TANSS_APP-Token nur mit loggedInUserId.Rechte: abhängig von den Hooks der konkreten Service-Klasse.Hinweise: Ablauf akf.long(id): Permission-Hooks, Prüf-Hook auf der Entität, ENTITY_NOT_FOUND wenn unbekannt. meta DELETED.
         /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
@@ -108,7 +108,7 @@ namespace Tanss.Api.Rest.Api.V1.SupportProfileCategories.Item
             return requestInfo;
         }
         /// <summary>
-        /// Generischer Admin-Endpunkt (Basisklasse TnsAdminBaseController): liefert die Support-Profil-Kategorie anhand des Schlüssels.Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: general, Rollen USER. TANSS_APP-Token nur mit loggedInUserId.Rechte: Firmenzugriffsprüfung falls ITnsCompanyAssignable (FORBIDDEN_NO_COMPANY_ACCESS); weitere Hooks der Service-Klasse.Hinweise: OBJECT_NOT_FOUND wenn unbekannt; ggf. Filterstrategien. Felder der Entität nicht analysiert. meta FOUND.
+        /// Generischer Admin-Endpunkt (generischer Verwaltungsendpunkt): liefert die Support-Profil-Kategorie anhand des Schlüssels.Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: general, Rollen USER. TANSS_APP-Token nur mit loggedInUserId.Rechte: Firmenzugriffsprüfung falls ITnsCompanyAssignable (FORBIDDEN_NO_COMPANY_ACCESS); weitere Hooks der Service-Klasse.Hinweise: OBJECT_NOT_FOUND wenn unbekannt; ggf. Filterstrategien. Felder der Entität nicht dokumentiert. meta FOUND.
         /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
@@ -127,7 +127,7 @@ namespace Tanss.Api.Rest.Api.V1.SupportProfileCategories.Item
             return requestInfo;
         }
         /// <summary>
-        /// Generischer Admin-Endpunkt (Basisklasse TnsAdminBaseController): aktualisiert die Support-Profil-Kategorie per JSON-Teilupdate.Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: general, Rollen USER. TANSS_APP-Token nur mit loggedInUserId.Rechte: Hooks der Service-Klasse; Standard Firmenzugriffsprüfung bei ITnsCompanyAssignable.Hinweise: &apos;id&apos; wird vor dem Merge entfernt. ENTITY_NOT_FOUND wenn unbekannt, leeres JSON -&gt; TnsJsonException, Merge via Jackson readerForUpdating, Speichern mit Diff-Logging. meta UPDATED.
+        /// Generischer Admin-Endpunkt (generischer Verwaltungsendpunkt): aktualisiert die Support-Profil-Kategorie per JSON-Teilupdate.Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: general, Rollen USER. TANSS_APP-Token nur mit loggedInUserId.Rechte: Hooks der Service-Klasse; Standard Firmenzugriffsprüfung bei ITnsCompanyAssignable.Hinweise: &apos;id&apos; wird vor dem Merge entfernt. ENTITY_NOT_FOUND wenn unbekannt, leeres JSON -&gt; TnsJsonException, Merge via Jackson readerForUpdating, Speichern mit Diff-Logging. meta UPDATED.
         /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
         /// <param name="body">The request body</param>

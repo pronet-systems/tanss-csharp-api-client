@@ -8,7 +8,7 @@ using System;
 namespace Tanss.Api.Rest.Models
 {
     /// <summary>
-    /// Portal-Versandgrund (Entität des TnsPortalSendReasonAdminController). Felder nicht analysiert.
+    /// Portal-Versandgrund (Verwaltungsobjekt). Die Felder sind nicht dokumentiert.
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class TnsPortalSendReason : IAdditionalDataHolder, IParsable

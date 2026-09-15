@@ -59,7 +59,7 @@ namespace Tanss.Api.Rest.Api.TanssApp.V1.Ticket
         {
         }
         /// <summary>
-        /// Alias von POST /api/v1/tickets mit remitterCheck=false - legt ein Ticket an. Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP. Hinweise: Vorab-Check im Ticket-Controller nicht analysiert. Status CREATED. Auch unter /api/tanss.x/v1.
+        /// Alias von POST /api/v1/tickets mit remitterCheck=false - legt ein Ticket an. Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP. Hinweise: Status CREATED. Auch unter /api/tanss.x/v1.
         /// </summary>
         /// <returns>A <see cref="global::Tanss.Api.Rest.Api.TanssApp.V1.Ticket.TicketPostResponse"/></returns>
         /// <param name="body">ticket model to be saved</param>
@@ -99,7 +99,7 @@ namespace Tanss.Api.Rest.Api.TanssApp.V1.Ticket
             return await RequestAdapter.SendAsync<global::Tanss.Api.Rest.Api.TanssApp.V1.Ticket.TicketPutResponse>(requestInfo, global::Tanss.Api.Rest.Api.TanssApp.V1.Ticket.TicketPutResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
-        /// Alias von POST /api/v1/tickets mit remitterCheck=false - legt ein Ticket an. Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP. Hinweise: Vorab-Check im Ticket-Controller nicht analysiert. Status CREATED. Auch unter /api/tanss.x/v1.
+        /// Alias von POST /api/v1/tickets mit remitterCheck=false - legt ein Ticket an. Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP. Hinweise: Status CREATED. Auch unter /api/tanss.x/v1.
         /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
         /// <param name="body">ticket model to be saved</param>

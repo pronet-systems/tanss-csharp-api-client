@@ -34,7 +34,7 @@ namespace Tanss.Api.Rest.Api.TanssApp.V1.Search
         {
         }
         /// <summary>
-        /// Alias von PUT /api/v1/search - globale Suche ueber mehrere Bereiche. Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP. Hinweise: Delegiert 1:1 an TnsSearchController; Rechte/Filter im Service nicht analysiert. Auch unter /api/tanss.x/v1.
+        /// Alias von PUT /api/v1/search - globale Suche ueber mehrere Bereiche. Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP. Hinweise: Die nötigen Rechte sind nicht dokumentiert. Auch unter /api/tanss.x/v1.
         /// </summary>
         /// <returns>A <see cref="global::Tanss.Api.Rest.Api.TanssApp.V1.Search.SearchPutResponse"/></returns>
         /// <param name="body">object representing a definition for searching in misc. areas</param>
@@ -54,7 +54,7 @@ namespace Tanss.Api.Rest.Api.TanssApp.V1.Search
             return await RequestAdapter.SendAsync<global::Tanss.Api.Rest.Api.TanssApp.V1.Search.SearchPutResponse>(requestInfo, global::Tanss.Api.Rest.Api.TanssApp.V1.Search.SearchPutResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
-        /// Alias von PUT /api/v1/search - globale Suche ueber mehrere Bereiche. Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP. Hinweise: Delegiert 1:1 an TnsSearchController; Rechte/Filter im Service nicht analysiert. Auch unter /api/tanss.x/v1.
+        /// Alias von PUT /api/v1/search - globale Suche ueber mehrere Bereiche. Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP. Hinweise: Die nötigen Rechte sind nicht dokumentiert. Auch unter /api/tanss.x/v1.
         /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
         /// <param name="body">object representing a definition for searching in misc. areas</param>

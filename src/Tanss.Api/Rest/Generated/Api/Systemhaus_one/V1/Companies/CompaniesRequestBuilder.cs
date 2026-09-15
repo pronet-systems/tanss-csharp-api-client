@@ -65,7 +65,7 @@ namespace Tanss.Api.Rest.Api.Systemhaus_one.V1.Companies
         {
         }
         /// <summary>
-        /// Legt eine neue Firma an (delegiert 1:1 an den offiziellen Handler POST /api/v1/companies).Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen SYSTEMHAUS_ONE.Rechte: MANAGE_COMPANIES, Zugriffstyp COMPANY_ADMIN.Hinweise: Keine SAP_ONE-Lizenzprüfung (kein this.do()). Verhalten identisch zu POST /api/v1/companies (Create-Vorprüfung, Headquarter-Validierung); &quot;id&quot; im Body wird vor dem Mapping entfernt.
+        /// Legt eine neue Firma an (entspricht POST /api/v1/companies).Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen SYSTEMHAUS_ONE.Rechte: MANAGE_COMPANIES, Zugriffstyp COMPANY_ADMIN.Hinweise: Keine SAP_ONE-Lizenzprüfung (kein this.do()). Verhalten identisch zu POST /api/v1/companies (Create-Vorprüfung, Headquarter-Validierung); &quot;id&quot; im Body wird vor dem Mapping entfernt.
         /// </summary>
         /// <returns>A <see cref="global::Tanss.Api.Rest.Api.Systemhaus_one.V1.Companies.CompaniesPostResponse"/></returns>
         /// <param name="body">Company object to be saved.</param>
@@ -85,7 +85,7 @@ namespace Tanss.Api.Rest.Api.Systemhaus_one.V1.Companies
             return await RequestAdapter.SendAsync<global::Tanss.Api.Rest.Api.Systemhaus_one.V1.Companies.CompaniesPostResponse>(requestInfo, global::Tanss.Api.Rest.Api.Systemhaus_one.V1.Companies.CompaniesPostResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
-        /// Legt eine neue Firma an (delegiert 1:1 an den offiziellen Handler POST /api/v1/companies).Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen SYSTEMHAUS_ONE.Rechte: MANAGE_COMPANIES, Zugriffstyp COMPANY_ADMIN.Hinweise: Keine SAP_ONE-Lizenzprüfung (kein this.do()). Verhalten identisch zu POST /api/v1/companies (Create-Vorprüfung, Headquarter-Validierung); &quot;id&quot; im Body wird vor dem Mapping entfernt.
+        /// Legt eine neue Firma an (entspricht POST /api/v1/companies).Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen SYSTEMHAUS_ONE.Rechte: MANAGE_COMPANIES, Zugriffstyp COMPANY_ADMIN.Hinweise: Keine SAP_ONE-Lizenzprüfung (kein this.do()). Verhalten identisch zu POST /api/v1/companies (Create-Vorprüfung, Headquarter-Validierung); &quot;id&quot; im Body wird vor dem Mapping entfernt.
         /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
         /// <param name="body">Company object to be saved.</param>

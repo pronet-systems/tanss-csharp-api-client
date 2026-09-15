@@ -34,7 +34,7 @@ namespace Tanss.Api.Rest.Api.V1.TextModules.Item
         {
         }
         /// <summary>
-        /// Generischer Admin-Endpunkt (Basisklasse TnsAdminBaseController): löscht den Textbaustein anhand des Schlüssels.Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: general, Rollen USER. TANSS_APP-Token nur mit loggedInUserId.Rechte: abhängig von den Hooks der konkreten Service-Klasse.Hinweise: Ablauf akf.long(id): Permission-Hooks, Prüf-Hook auf der Entität, ENTITY_NOT_FOUND wenn unbekannt. meta DELETED.
+        /// Generischer Admin-Endpunkt (generischer Verwaltungsendpunkt): löscht den Textbaustein anhand des Schlüssels.Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: general, Rollen USER. TANSS_APP-Token nur mit loggedInUserId.Rechte: abhängig von den Hooks der konkreten Service-Klasse.Hinweise: Ablauf akf.long(id): Permission-Hooks, Prüf-Hook auf der Entität, ENTITY_NOT_FOUND wenn unbekannt. meta DELETED.
         /// </summary>
         /// <returns>A <see cref="global::Tanss.Api.Rest.Api.V1.TextModules.Item.TextModulesDeleteResponse"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
@@ -75,7 +75,7 @@ namespace Tanss.Api.Rest.Api.V1.TextModules.Item
             return await RequestAdapter.SendAsync<global::Tanss.Api.Rest.Api.V1.TextModules.Item.TextModulesGetResponse>(requestInfo, global::Tanss.Api.Rest.Api.V1.TextModules.Item.TextModulesGetResponse.CreateFromDiscriminatorValue, errorMapping, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
-        /// Generischer Admin-Endpunkt (Basisklasse TnsAdminBaseController): aktualisiert den Textbaustein per JSON-Teilupdate.Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: general, Rollen USER. TANSS_APP-Token nur mit loggedInUserId.Rechte: Hooks der Service-Klasse; Standard Firmenzugriffsprüfung bei ITnsCompanyAssignable.Hinweise: &apos;id&apos; wird vor dem Merge entfernt. ENTITY_NOT_FOUND wenn unbekannt, leeres JSON -&gt; TnsJsonException, Merge via Jackson readerForUpdating, Speichern mit Diff-Logging. Felder von TnsTextModule aus den Beispielen der Basis-Spec (GET/POST /api/v1/textModules) abgeleitet. meta UPDATED.
+        /// Generischer Admin-Endpunkt (generischer Verwaltungsendpunkt): aktualisiert den Textbaustein per JSON-Teilupdate.Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: general, Rollen USER. TANSS_APP-Token nur mit loggedInUserId.Rechte: Hooks der Service-Klasse; Standard Firmenzugriffsprüfung bei ITnsCompanyAssignable.Hinweise: &apos;id&apos; wird vor dem Merge entfernt. ENTITY_NOT_FOUND wenn unbekannt, leeres JSON -&gt; TnsJsonException, Merge via Jackson readerForUpdating, Speichern mit Diff-Logging. Felder von TnsTextModule aus den Beispielen der Basis-Spec (GET/POST /api/v1/textModules) abgeleitet. meta UPDATED.
         /// </summary>
         /// <returns>A <see cref="global::Tanss.Api.Rest.Api.V1.TextModules.Item.TextModulesPutResponse"/></returns>
         /// <param name="body">The request body</param>
@@ -95,7 +95,7 @@ namespace Tanss.Api.Rest.Api.V1.TextModules.Item
             return await RequestAdapter.SendAsync<global::Tanss.Api.Rest.Api.V1.TextModules.Item.TextModulesPutResponse>(requestInfo, global::Tanss.Api.Rest.Api.V1.TextModules.Item.TextModulesPutResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
-        /// Generischer Admin-Endpunkt (Basisklasse TnsAdminBaseController): löscht den Textbaustein anhand des Schlüssels.Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: general, Rollen USER. TANSS_APP-Token nur mit loggedInUserId.Rechte: abhängig von den Hooks der konkreten Service-Klasse.Hinweise: Ablauf akf.long(id): Permission-Hooks, Prüf-Hook auf der Entität, ENTITY_NOT_FOUND wenn unbekannt. meta DELETED.
+        /// Generischer Admin-Endpunkt (generischer Verwaltungsendpunkt): löscht den Textbaustein anhand des Schlüssels.Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: general, Rollen USER. TANSS_APP-Token nur mit loggedInUserId.Rechte: abhängig von den Hooks der konkreten Service-Klasse.Hinweise: Ablauf akf.long(id): Permission-Hooks, Prüf-Hook auf der Entität, ENTITY_NOT_FOUND wenn unbekannt. meta DELETED.
         /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
@@ -133,7 +133,7 @@ namespace Tanss.Api.Rest.Api.V1.TextModules.Item
             return requestInfo;
         }
         /// <summary>
-        /// Generischer Admin-Endpunkt (Basisklasse TnsAdminBaseController): aktualisiert den Textbaustein per JSON-Teilupdate.Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: general, Rollen USER. TANSS_APP-Token nur mit loggedInUserId.Rechte: Hooks der Service-Klasse; Standard Firmenzugriffsprüfung bei ITnsCompanyAssignable.Hinweise: &apos;id&apos; wird vor dem Merge entfernt. ENTITY_NOT_FOUND wenn unbekannt, leeres JSON -&gt; TnsJsonException, Merge via Jackson readerForUpdating, Speichern mit Diff-Logging. Felder von TnsTextModule aus den Beispielen der Basis-Spec (GET/POST /api/v1/textModules) abgeleitet. meta UPDATED.
+        /// Generischer Admin-Endpunkt (generischer Verwaltungsendpunkt): aktualisiert den Textbaustein per JSON-Teilupdate.Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: general, Rollen USER. TANSS_APP-Token nur mit loggedInUserId.Rechte: Hooks der Service-Klasse; Standard Firmenzugriffsprüfung bei ITnsCompanyAssignable.Hinweise: &apos;id&apos; wird vor dem Merge entfernt. ENTITY_NOT_FOUND wenn unbekannt, leeres JSON -&gt; TnsJsonException, Merge via Jackson readerForUpdating, Speichern mit Diff-Logging. Felder von TnsTextModule aus den Beispielen der Basis-Spec (GET/POST /api/v1/textModules) abgeleitet. meta UPDATED.
         /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
         /// <param name="body">The request body</param>

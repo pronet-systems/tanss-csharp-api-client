@@ -34,7 +34,7 @@ namespace Tanss.Api.Rest.Api.TanssApp.V1.TanssEvents.Rules.Test.ActionNamespace
         {
         }
         /// <summary>
-        /// Alias von PUT /api/v1/tanssEvents/rules/test/action - fuehrt eine Regel-Aktion testweise fuer ein Objekt aus. Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP. Rechte: bet.ADMINISTRATE_TANSS_EVENT_RULES. Hinweise: Status CREATED. Ergebnisobjekt der Aktion unbekannt; Testservice nicht analysiert. Auch unter /api/tanss.x/v1.
+        /// Alias von PUT /api/v1/tanssEvents/rules/test/action - fuehrt eine Regel-Aktion testweise fuer ein Objekt aus. Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP. Rechte: bet.ADMINISTRATE_TANSS_EVENT_RULES. Hinweise: Status CREATED. Ergebnisobjekt der Aktion unbekannt; Auch unter /api/tanss.x/v1.
         /// </summary>
         /// <returns>A <see cref="global::Tanss.Api.Rest.Api.TanssApp.V1.TanssEvents.Rules.Test.ActionNamespace.ActionPutResponse"/></returns>
         /// <param name="body">defines the infos needed to trigger a rule test action</param>
@@ -54,7 +54,7 @@ namespace Tanss.Api.Rest.Api.TanssApp.V1.TanssEvents.Rules.Test.ActionNamespace
             return await RequestAdapter.SendAsync<global::Tanss.Api.Rest.Api.TanssApp.V1.TanssEvents.Rules.Test.ActionNamespace.ActionPutResponse>(requestInfo, global::Tanss.Api.Rest.Api.TanssApp.V1.TanssEvents.Rules.Test.ActionNamespace.ActionPutResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
-        /// Alias von PUT /api/v1/tanssEvents/rules/test/action - fuehrt eine Regel-Aktion testweise fuer ein Objekt aus. Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP. Rechte: bet.ADMINISTRATE_TANSS_EVENT_RULES. Hinweise: Status CREATED. Ergebnisobjekt der Aktion unbekannt; Testservice nicht analysiert. Auch unter /api/tanss.x/v1.
+        /// Alias von PUT /api/v1/tanssEvents/rules/test/action - fuehrt eine Regel-Aktion testweise fuer ein Objekt aus. Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP. Rechte: bet.ADMINISTRATE_TANSS_EVENT_RULES. Hinweise: Status CREATED. Ergebnisobjekt der Aktion unbekannt; Auch unter /api/tanss.x/v1.
         /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
         /// <param name="body">defines the infos needed to trigger a rule test action</param>

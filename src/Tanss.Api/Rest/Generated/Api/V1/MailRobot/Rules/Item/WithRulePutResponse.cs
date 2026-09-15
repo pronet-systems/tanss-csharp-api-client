@@ -15,7 +15,7 @@ namespace Tanss.Api.Rest.Api.V1.MailRobot.Rules.Item
     {
         /// <summary>Stores additional data not described in the OpenAPI description found when deserializing. Can be used for serialization as well.</summary>
         public IDictionary<string, object> AdditionalData { get; set; }
-        /// <summary>Mailroboter-Regel mit Aktionen und Bedingungen. Feldnamen aus der Entity TnsMailRobotRule abgeleitet (DTO im Build obfuskiert, JSON-Schlüssel unsicher).</summary>
+        /// <summary>Mailroboter-Regel mit Aktionen und Bedingungen. Die JSON-Schlüssel sind nicht dokumentiert und daher unsicher.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
         public global::Tanss.Api.Rest.Models.TnsMailRobotRule? Content { get; set; }

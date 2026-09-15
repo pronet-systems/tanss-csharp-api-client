@@ -8,7 +8,7 @@ using System;
 namespace Tanss.Api.Rest.Models
 {
     /// <summary>
-    /// Filter eines Dashboard-Charts. DOUGHNUT: incomingTags + sortingTags; FUNNEL: incomingTags + stages.Die Elementtypen der Arrays sind nicht analysiert (vermutlich Tag-IDs bzw. Stufen-Objekte).
+    /// Filter eines Dashboard-Charts. DOUGHNUT: incomingTags + sortingTags; FUNNEL: incomingTags + stages.Die Elementtypen der Arrays sind nicht dokumentiert (vermutlich Tag-IDs bzw. Stufen-Objekte).
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class TnsManagementDashboardChartFilter : IAdditionalDataHolder, IParsable

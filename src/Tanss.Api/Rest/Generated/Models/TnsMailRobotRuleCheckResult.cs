@@ -8,7 +8,7 @@ using System;
 namespace Tanss.Api.Rest.Models
 {
     /// <summary>
-    /// Ergebnis-Collector eines Mailroboter-Regellaufs. Die JSON-Schlüssel sind im Bytecode obfuskiert; die Feldnamen hier sind aus dem Inhalt abgeleitet und unsicher.
+    /// Ergebnis-Collector eines Mailroboter-Regellaufs. Die JSON-Schlüssel sind nicht dokumentiert; die Feldnamen hier sind aus dem Inhalt abgeleitet und unsicher.
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class TnsMailRobotRuleCheckResult : IAdditionalDataHolder, IParsable

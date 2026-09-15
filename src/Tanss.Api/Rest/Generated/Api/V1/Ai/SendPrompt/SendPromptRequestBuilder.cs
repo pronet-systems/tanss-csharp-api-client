@@ -40,7 +40,7 @@ namespace Tanss.Api.Rest.Api.V1.Ai.SendPrompt
         {
         }
         /// <summary>
-        /// Sendet einen Text mit dem gewählten Prompt an den konfigurierten LLM-Provider und liefert die Antwort synchron.Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: general, Rollen USER. TANSS_APP-Token nur mit loggedInUserId.Rechte: Lizenz ACTIVE_SUBSCRIPTION, ROLE_USER; kein weiterer Rechte-Check.Hinweise: promptId -&gt; TnsLLMPrompt -&gt; configId -&gt; TnsLLMConfiguration -&gt; Provider; 404 PROMPT_NOT_FOUND bzw. LLM_CONFIG_NOT_FOUND. Provider-Aufruf nicht analysiert. meta FOUND.
+        /// Sendet einen Text mit dem gewählten Prompt an den konfigurierten LLM-Provider und liefert die Antwort synchron.Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: general, Rollen USER. TANSS_APP-Token nur mit loggedInUserId.Rechte: Lizenz ACTIVE_SUBSCRIPTION, ROLE_USER; kein weiterer Rechte-Check.Hinweise: promptId -&gt; TnsLLMPrompt -&gt; configId -&gt; TnsLLMConfiguration -&gt; Provider; 404 PROMPT_NOT_FOUND bzw. LLM_CONFIG_NOT_FOUND. meta FOUND.
         /// </summary>
         /// <returns>A <see cref="global::Tanss.Api.Rest.Api.V1.Ai.SendPrompt.SendPromptPostResponse"/></returns>
         /// <param name="body">Anfrage an den LLM-Provider (TnsLLMRequest).</param>
@@ -60,7 +60,7 @@ namespace Tanss.Api.Rest.Api.V1.Ai.SendPrompt
             return await RequestAdapter.SendAsync<global::Tanss.Api.Rest.Api.V1.Ai.SendPrompt.SendPromptPostResponse>(requestInfo, global::Tanss.Api.Rest.Api.V1.Ai.SendPrompt.SendPromptPostResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
-        /// Sendet einen Text mit dem gewählten Prompt an den konfigurierten LLM-Provider und liefert die Antwort synchron.Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: general, Rollen USER. TANSS_APP-Token nur mit loggedInUserId.Rechte: Lizenz ACTIVE_SUBSCRIPTION, ROLE_USER; kein weiterer Rechte-Check.Hinweise: promptId -&gt; TnsLLMPrompt -&gt; configId -&gt; TnsLLMConfiguration -&gt; Provider; 404 PROMPT_NOT_FOUND bzw. LLM_CONFIG_NOT_FOUND. Provider-Aufruf nicht analysiert. meta FOUND.
+        /// Sendet einen Text mit dem gewählten Prompt an den konfigurierten LLM-Provider und liefert die Antwort synchron.Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: general, Rollen USER. TANSS_APP-Token nur mit loggedInUserId.Rechte: Lizenz ACTIVE_SUBSCRIPTION, ROLE_USER; kein weiterer Rechte-Check.Hinweise: promptId -&gt; TnsLLMPrompt -&gt; configId -&gt; TnsLLMConfiguration -&gt; Provider; 404 PROMPT_NOT_FOUND bzw. LLM_CONFIG_NOT_FOUND. meta FOUND.
         /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
         /// <param name="body">Anfrage an den LLM-Provider (TnsLLMRequest).</param>

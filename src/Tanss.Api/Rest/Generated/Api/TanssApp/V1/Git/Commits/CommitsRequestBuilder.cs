@@ -33,7 +33,7 @@ namespace Tanss.Api.Rest.Api.TanssApp.V1.Git.Commits
         {
         }
         /// <summary>
-        /// Alias von POST /api/v1/git/commits - legt einen Git-Commit-Eintrag (Ticketverknuepfung) an. Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP. Hinweise: Delegiert 1:1 an TnsGitCommitController; Rechtepruefung im Service nicht analysiert. Status CREATED. Auch unter /api/tanss.x/v1.
+        /// Alias von POST /api/v1/git/commits - legt einen Git-Commit-Eintrag (Ticketverknuepfung) an. Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP. Hinweise: Die nötigen Rechte sind nicht dokumentiert. Status CREATED. Auch unter /api/tanss.x/v1.
         /// </summary>
         /// <returns>A <see cref="global::Tanss.Api.Rest.Api.TanssApp.V1.Git.Commits.CommitsPostResponse"/></returns>
         /// <param name="body">The request body</param>
@@ -53,7 +53,7 @@ namespace Tanss.Api.Rest.Api.TanssApp.V1.Git.Commits
             return await RequestAdapter.SendAsync<global::Tanss.Api.Rest.Api.TanssApp.V1.Git.Commits.CommitsPostResponse>(requestInfo, global::Tanss.Api.Rest.Api.TanssApp.V1.Git.Commits.CommitsPostResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
-        /// Alias von POST /api/v1/git/commits - legt einen Git-Commit-Eintrag (Ticketverknuepfung) an. Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP. Hinweise: Delegiert 1:1 an TnsGitCommitController; Rechtepruefung im Service nicht analysiert. Status CREATED. Auch unter /api/tanss.x/v1.
+        /// Alias von POST /api/v1/git/commits - legt einen Git-Commit-Eintrag (Ticketverknuepfung) an. Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP. Hinweise: Die nötigen Rechte sind nicht dokumentiert. Status CREATED. Auch unter /api/tanss.x/v1.
         /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
         /// <param name="body">The request body</param>

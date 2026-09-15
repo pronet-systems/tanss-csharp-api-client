@@ -8,7 +8,7 @@ using System;
 namespace Tanss.Api.Rest.Models
 {
     /// <summary>
-    /// Mailroboter-Regel mit Aktionen und Bedingungen. Feldnamen aus der Entity TnsMailRobotRule abgeleitet (DTO im Build obfuskiert, JSON-Schlüssel unsicher).
+    /// Mailroboter-Regel mit Aktionen und Bedingungen. Die JSON-Schlüssel sind nicht dokumentiert und daher unsicher.
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class TnsMailRobotRule : IAdditionalDataHolder, IParsable

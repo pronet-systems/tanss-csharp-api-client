@@ -34,7 +34,7 @@ namespace Tanss.Api.Rest.Api.TanssApp.V1.Supports.Properties
         {
         }
         /// <summary>
-        /// Alias von POST /api/v1/supports/properties - berechnet abhaengige Felder/Meta-Properties einer (ungespeicherten) Taetigkeit nach Aenderung des Feldes changedProperty. Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP. Hinweise: Berechnungsservice nicht analysiert. Auch unter /api/tanss.x/v1.
+        /// Alias von POST /api/v1/supports/properties - berechnet abhaengige Felder/Meta-Properties einer (ungespeicherten) Taetigkeit nach Aenderung des Feldes changedProperty. Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP. Hinweise: Auch unter /api/tanss.x/v1.
         /// </summary>
         /// <returns>A <see cref="global::Tanss.Api.Rest.Api.TanssApp.V1.Supports.Properties.PropertiesPostResponse"/></returns>
         /// <param name="body">describes a support entry (same for appointment)</param>
@@ -54,7 +54,7 @@ namespace Tanss.Api.Rest.Api.TanssApp.V1.Supports.Properties
             return await RequestAdapter.SendAsync<global::Tanss.Api.Rest.Api.TanssApp.V1.Supports.Properties.PropertiesPostResponse>(requestInfo, global::Tanss.Api.Rest.Api.TanssApp.V1.Supports.Properties.PropertiesPostResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
-        /// Alias von POST /api/v1/supports/properties - berechnet abhaengige Felder/Meta-Properties einer (ungespeicherten) Taetigkeit nach Aenderung des Feldes changedProperty. Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP. Hinweise: Berechnungsservice nicht analysiert. Auch unter /api/tanss.x/v1.
+        /// Alias von POST /api/v1/supports/properties - berechnet abhaengige Felder/Meta-Properties einer (ungespeicherten) Taetigkeit nach Aenderung des Feldes changedProperty. Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP. Hinweise: Auch unter /api/tanss.x/v1.
         /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
         /// <param name="body">describes a support entry (same for appointment)</param>
@@ -85,7 +85,7 @@ namespace Tanss.Api.Rest.Api.TanssApp.V1.Supports.Properties
             return new global::Tanss.Api.Rest.Api.TanssApp.V1.Supports.Properties.PropertiesRequestBuilder(rawUrl, RequestAdapter);
         }
         /// <summary>
-        /// Alias von POST /api/v1/supports/properties - berechnet abhaengige Felder/Meta-Properties einer (ungespeicherten) Taetigkeit nach Aenderung des Feldes changedProperty. Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP. Hinweise: Berechnungsservice nicht analysiert. Auch unter /api/tanss.x/v1.
+        /// Alias von POST /api/v1/supports/properties - berechnet abhaengige Felder/Meta-Properties einer (ungespeicherten) Taetigkeit nach Aenderung des Feldes changedProperty. Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP. Hinweise: Auch unter /api/tanss.x/v1.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
         public partial class PropertiesRequestBuilderPostQueryParameters 

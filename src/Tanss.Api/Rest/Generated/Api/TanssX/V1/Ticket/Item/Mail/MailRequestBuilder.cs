@@ -33,7 +33,7 @@ namespace Tanss.Api.Rest.Api.TanssX.V1.Ticket.Item.Mail
         {
         }
         /// <summary>
-        /// Hängt eine rohe E-Mail (EML/MIME) an ein Ticket an; die Mail wird geparst und als Ticket-Mail gespeichert. Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP. Hinweise: Auch unter /api/tanss.app/v1. Body ist ein String (kein JSON), Content-Type text/plain. internal-Flag wird aus Absenderadresse vs. Ticket-Firma und Systemkonfiguration bestimmt. Kein Rechte-Check im Controller sichtbar. meta.status UPDATED obwohl neu angelegt.
+        /// Hängt eine rohe E-Mail (EML/MIME) an ein Ticket an; die Mail wird geparst und als Ticket-Mail gespeichert. Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP. Hinweise: Auch unter /api/tanss.app/v1. Body ist ein String (kein JSON), Content-Type text/plain. internal-Flag wird aus Absenderadresse vs. Ticket-Firma und Systemkonfiguration bestimmt. Eine eigene Rechteprüfung ist nicht dokumentiert. meta.status UPDATED obwohl neu angelegt.
         /// </summary>
         /// <returns>A <see cref="global::Tanss.Api.Rest.Api.TanssX.V1.Ticket.Item.Mail.MailPostResponse"/></returns>
         /// <param name="body">Vollständige E-Mail im EML/MIME-Format.</param>
@@ -53,7 +53,7 @@ namespace Tanss.Api.Rest.Api.TanssX.V1.Ticket.Item.Mail
             return await RequestAdapter.SendAsync<global::Tanss.Api.Rest.Api.TanssX.V1.Ticket.Item.Mail.MailPostResponse>(requestInfo, global::Tanss.Api.Rest.Api.TanssX.V1.Ticket.Item.Mail.MailPostResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
-        /// Hängt eine rohe E-Mail (EML/MIME) an ein Ticket an; die Mail wird geparst und als Ticket-Mail gespeichert. Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP. Hinweise: Auch unter /api/tanss.app/v1. Body ist ein String (kein JSON), Content-Type text/plain. internal-Flag wird aus Absenderadresse vs. Ticket-Firma und Systemkonfiguration bestimmt. Kein Rechte-Check im Controller sichtbar. meta.status UPDATED obwohl neu angelegt.
+        /// Hängt eine rohe E-Mail (EML/MIME) an ein Ticket an; die Mail wird geparst und als Ticket-Mail gespeichert. Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP. Hinweise: Auch unter /api/tanss.app/v1. Body ist ein String (kein JSON), Content-Type text/plain. internal-Flag wird aus Absenderadresse vs. Ticket-Firma und Systemkonfiguration bestimmt. Eine eigene Rechteprüfung ist nicht dokumentiert. meta.status UPDATED obwohl neu angelegt.
         /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
         /// <param name="body">Vollständige E-Mail im EML/MIME-Format.</param>

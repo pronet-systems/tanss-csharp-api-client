@@ -58,7 +58,7 @@ namespace Tanss.Api.Rest.Api.V1.MailRobot.Rules.Item
             return await RequestAdapter.SendAsync<global::Tanss.Api.Rest.Api.V1.MailRobot.Rules.Item.WithRuleDeleteResponse>(requestInfo, global::Tanss.Api.Rest.Api.V1.MailRobot.Rules.Item.WithRuleDeleteResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
-        /// Liefert eine Mailroboter-Regel mit Aktionen und Bedingungen. Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: general, Rollen USER. TANSS_APP-Token nur mit loggedInUserId. Rechte: licModule(MAILROBOT), companyAccess(-1) (eigene Firma), bet.MANAGE_MAIL_ROBOT_RULES. Hinweise: 404 &apos;Rule was not found!&apos;. Das Regel-DTO (Klasse cdw) trägt kein @KeepClass, Feld-/Getter-Namen sind im Build obfuskiert; die tatsächlichen JSON-Schlüssel sind daher unsicher - Namen aus der Entity TnsMailRobotRule abgeleitet.
+        /// Liefert eine Mailroboter-Regel mit Aktionen und Bedingungen. Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: general, Rollen USER. TANSS_APP-Token nur mit loggedInUserId. Rechte: licModule(MAILROBOT), companyAccess(-1) (eigene Firma), bet.MANAGE_MAIL_ROBOT_RULES. Hinweise: 404 &apos;Rule was not found!&apos;. Das Regel-DTO (Klasse cdw) trägt kein @KeepClass, Die JSON-Schlüssel sind nicht dokumentiert und daher unsicher.
         /// </summary>
         /// <returns>A <see cref="global::Tanss.Api.Rest.Api.V1.MailRobot.Rules.Item.WithRuleGetResponse"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
@@ -76,10 +76,10 @@ namespace Tanss.Api.Rest.Api.V1.MailRobot.Rules.Item
             return await RequestAdapter.SendAsync<global::Tanss.Api.Rest.Api.V1.MailRobot.Rules.Item.WithRuleGetResponse>(requestInfo, global::Tanss.Api.Rest.Api.V1.MailRobot.Rules.Item.WithRuleGetResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
-        /// Aktualisiert eine Mailroboter-Regel komplett (Stammdaten, Aktionen und Bedingungen werden ersetzt). Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: general, Rollen USER. TANSS_APP-Token nur mit loggedInUserId. Rechte: licModule(MAILROBOT), companyAccess(-1) (eigene Firma), bet.MANAGE_MAIL_ROBOT_RULES. Hinweise: Body-ID wird durch {ruleId} ersetzt; Aktionen/Bedingungen werden neu gespeichert. 404 &apos;could not convert rule to rule object!&apos; bei null-Body, 404 &apos;Rule was not found!&apos; falls danach nicht ladbar. Antwort-Status UPDATED. JSON-Schlüssel wegen Obfuskation unsicher.
+        /// Aktualisiert eine Mailroboter-Regel komplett (Stammdaten, Aktionen und Bedingungen werden ersetzt). Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: general, Rollen USER. TANSS_APP-Token nur mit loggedInUserId. Rechte: licModule(MAILROBOT), companyAccess(-1) (eigene Firma), bet.MANAGE_MAIL_ROBOT_RULES. Hinweise: Body-ID wird durch {ruleId} ersetzt; Aktionen/Bedingungen werden neu gespeichert. 404 &apos;could not convert rule to rule object!&apos; bei null-Body, 404 &apos;Rule was not found!&apos; falls danach nicht ladbar. Antwort-Status UPDATED. JSON-Schlüssel nicht dokumentiert und daher unsicher.
         /// </summary>
         /// <returns>A <see cref="global::Tanss.Api.Rest.Api.V1.MailRobot.Rules.Item.WithRulePutResponse"/></returns>
-        /// <param name="body">Mailroboter-Regel mit Aktionen und Bedingungen. Feldnamen aus der Entity TnsMailRobotRule abgeleitet (DTO im Build obfuskiert, JSON-Schlüssel unsicher).</param>
+        /// <param name="body">Mailroboter-Regel mit Aktionen und Bedingungen. Die JSON-Schlüssel sind nicht dokumentiert und daher unsicher.</param>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -115,7 +115,7 @@ namespace Tanss.Api.Rest.Api.V1.MailRobot.Rules.Item
             return requestInfo;
         }
         /// <summary>
-        /// Liefert eine Mailroboter-Regel mit Aktionen und Bedingungen. Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: general, Rollen USER. TANSS_APP-Token nur mit loggedInUserId. Rechte: licModule(MAILROBOT), companyAccess(-1) (eigene Firma), bet.MANAGE_MAIL_ROBOT_RULES. Hinweise: 404 &apos;Rule was not found!&apos;. Das Regel-DTO (Klasse cdw) trägt kein @KeepClass, Feld-/Getter-Namen sind im Build obfuskiert; die tatsächlichen JSON-Schlüssel sind daher unsicher - Namen aus der Entity TnsMailRobotRule abgeleitet.
+        /// Liefert eine Mailroboter-Regel mit Aktionen und Bedingungen. Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: general, Rollen USER. TANSS_APP-Token nur mit loggedInUserId. Rechte: licModule(MAILROBOT), companyAccess(-1) (eigene Firma), bet.MANAGE_MAIL_ROBOT_RULES. Hinweise: 404 &apos;Rule was not found!&apos;. Das Regel-DTO (Klasse cdw) trägt kein @KeepClass, Die JSON-Schlüssel sind nicht dokumentiert und daher unsicher.
         /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
@@ -134,10 +134,10 @@ namespace Tanss.Api.Rest.Api.V1.MailRobot.Rules.Item
             return requestInfo;
         }
         /// <summary>
-        /// Aktualisiert eine Mailroboter-Regel komplett (Stammdaten, Aktionen und Bedingungen werden ersetzt). Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: general, Rollen USER. TANSS_APP-Token nur mit loggedInUserId. Rechte: licModule(MAILROBOT), companyAccess(-1) (eigene Firma), bet.MANAGE_MAIL_ROBOT_RULES. Hinweise: Body-ID wird durch {ruleId} ersetzt; Aktionen/Bedingungen werden neu gespeichert. 404 &apos;could not convert rule to rule object!&apos; bei null-Body, 404 &apos;Rule was not found!&apos; falls danach nicht ladbar. Antwort-Status UPDATED. JSON-Schlüssel wegen Obfuskation unsicher.
+        /// Aktualisiert eine Mailroboter-Regel komplett (Stammdaten, Aktionen und Bedingungen werden ersetzt). Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: general, Rollen USER. TANSS_APP-Token nur mit loggedInUserId. Rechte: licModule(MAILROBOT), companyAccess(-1) (eigene Firma), bet.MANAGE_MAIL_ROBOT_RULES. Hinweise: Body-ID wird durch {ruleId} ersetzt; Aktionen/Bedingungen werden neu gespeichert. 404 &apos;could not convert rule to rule object!&apos; bei null-Body, 404 &apos;Rule was not found!&apos; falls danach nicht ladbar. Antwort-Status UPDATED. JSON-Schlüssel nicht dokumentiert und daher unsicher.
         /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
-        /// <param name="body">Mailroboter-Regel mit Aktionen und Bedingungen. Feldnamen aus der Entity TnsMailRobotRule abgeleitet (DTO im Build obfuskiert, JSON-Schlüssel unsicher).</param>
+        /// <param name="body">Mailroboter-Regel mit Aktionen und Bedingungen. Die JSON-Schlüssel sind nicht dokumentiert und daher unsicher.</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable

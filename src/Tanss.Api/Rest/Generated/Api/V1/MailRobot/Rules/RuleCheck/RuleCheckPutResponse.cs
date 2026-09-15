@@ -15,7 +15,7 @@ namespace Tanss.Api.Rest.Api.V1.MailRobot.Rules.RuleCheck
     {
         /// <summary>Stores additional data not described in the OpenAPI description found when deserializing. Can be used for serialization as well.</summary>
         public IDictionary<string, object> AdditionalData { get; set; }
-        /// <summary>Ergebnis-Collector eines Mailroboter-Regellaufs. Die JSON-Schlüssel sind im Bytecode obfuskiert; die Feldnamen hier sind aus dem Inhalt abgeleitet und unsicher.</summary>
+        /// <summary>Ergebnis-Collector eines Mailroboter-Regellaufs. Die JSON-Schlüssel sind nicht dokumentiert; die Feldnamen hier sind aus dem Inhalt abgeleitet und unsicher.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
         public global::Tanss.Api.Rest.Models.TnsMailRobotRuleCheckResult? Content { get; set; }

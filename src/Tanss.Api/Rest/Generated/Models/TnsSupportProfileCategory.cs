@@ -8,7 +8,7 @@ using System;
 namespace Tanss.Api.Rest.Models
 {
     /// <summary>
-    /// Support-Profil-Kategorie (Entität des TnsSupportProfileCategoryController). Felder nicht analysiert.
+    /// Support-Profil-Kategorie (Verwaltungsobjekt). Die Felder sind nicht dokumentiert.
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class TnsSupportProfileCategory : IAdditionalDataHolder, IParsable

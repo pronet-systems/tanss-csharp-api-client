@@ -33,7 +33,7 @@ namespace Tanss.Api.Rest.Api.TanssApp.V1.Ticket.Company.Item
         {
         }
         /// <summary>
-        /// Alias von GET /api/v1/tickets/company/{id} - Tickets einer Firma. Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP. Hinweise: Listenservice nicht analysiert. Auch unter /api/tanss.x/v1.
+        /// Alias von GET /api/v1/tickets/company/{id} - Tickets einer Firma. Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP. Hinweise: Auch unter /api/tanss.x/v1.
         /// </summary>
         /// <returns>A <see cref="global::Tanss.Api.Rest.Api.TanssApp.V1.Ticket.Company.Item.WithCompanyGetResponse"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
@@ -51,7 +51,7 @@ namespace Tanss.Api.Rest.Api.TanssApp.V1.Ticket.Company.Item
             return await RequestAdapter.SendAsync<global::Tanss.Api.Rest.Api.TanssApp.V1.Ticket.Company.Item.WithCompanyGetResponse>(requestInfo, global::Tanss.Api.Rest.Api.TanssApp.V1.Ticket.Company.Item.WithCompanyGetResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
-        /// Alias von GET /api/v1/tickets/company/{id} - Tickets einer Firma. Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP. Hinweise: Listenservice nicht analysiert. Auch unter /api/tanss.x/v1.
+        /// Alias von GET /api/v1/tickets/company/{id} - Tickets einer Firma. Nicht in der offiziellen Schnittstellenbeschreibung geführt; vom Server so umgesetzt, gegen 10.10 geprüft. Token: module, Rollen TANSS_APP. Hinweise: Auch unter /api/tanss.x/v1.
         /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
