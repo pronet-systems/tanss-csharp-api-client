@@ -203,7 +203,7 @@ ab, was man in der Dokumentation erwartet — deshalb stehen sie hier:
 | Fehlerhülle | enthält `traceId` |
 | Zugangsdaten-Kodierung | Kopfzeilen werden als UTF-8 gedeutet |
 
-Neun lesende Live-Tests halten diese Befunde fest. Sie laufen nur, wenn ihr sie mit euren
+Zehn lesende Live-Tests halten diese Befunde fest. Sie laufen nur, wenn ihr sie mit euren
 Zugangsdaten startet, und sie schreiben nichts:
 
 ```
