@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- NUR LESENDE Tests gegen eine echte TANSS-Instanz. Sie laufen ausschliesslich, wenn
+       TANSS_BASE_URL, TANSS_USER und TANSS_PASSWORD gesetzt sind, und werden sonst
+       uebersprungen. In diesem Projekt darf niemals ein schreibender Aufruf stehen. -->
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <IsPackable>false</IsPackable>
+    <RootNamespace>Tanss.Api.Live.Tests</RootNamespace>
+    <!-- CA1707: Testnamen tragen Unterstriche, weil sie Saetze sind und nicht Bezeichner. -->
+    <NoWarn>$(NoWarn);CA1707</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.12.0" />
+    <PackageReference Include="xunit" Version="2.9.2" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Tanss.Api\Tanss.Api.csproj" />
+  </ItemGroup>
+</Project>

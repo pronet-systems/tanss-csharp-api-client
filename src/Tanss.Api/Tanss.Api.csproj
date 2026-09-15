@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>Tanss.Api</RootNamespace>
+    <!-- Bewusst OHNE Windows-Ziel: Diese Schicht spricht HTTP und kennt weder DPAPI noch
+         WPF. Sie soll sich auf einem Bauserver ohne Windows uebersetzen und testen lassen. -->
+    <IsPackable>true</IsPackable>
+    <PackageId>Tanss.Api</PackageId>
+    <Authors>ProNet Systems GmbH</Authors>
+    <Description>Vollstaendiger .NET-Client fuer die TANSS-REST-Schnittstelle: der aus der offiziellen Schnittstellenbeschreibung erzeugte Client Tanss.Api.Rest fuer alle 1137 Endpunkte, dazu Anmeldung/Erneuerung/Praegen (TanssSession), Fehlerumschlag, Verfuegbarkeit und Token-Rollen je Operation; Einstieg ueber TanssApi.Create. Gemessen gegen TANSS 10.10.</Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Fuer den erzeugten REST-Client (Rest/Generated, Kiota) und die Anbindung in Rest/. -->
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.0" />
+    <PackageReference Include="Microsoft.Kiota.Bundle" Version="2.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- Der Endpunkt-Index: alle 1137 Operationen mit Token-Klasse, Rollen und Verfuegbarkeit.
+         Er wird eingebettet; ApiAvailability liest ihn ueber den LogicalName. -->
+    <EmbeddedResource Include="endpoint-index.json" LogicalName="Tanss.Api.endpoint-index.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+</Project>

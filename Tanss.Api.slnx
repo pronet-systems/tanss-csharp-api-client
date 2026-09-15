@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Tanss.Api/Tanss.Api.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Tanss.Api.Tests/Tanss.Api.Tests.csproj" />
+    <Project Path="tests/Tanss.Api.Live.Tests/Tanss.Api.Live.Tests.csproj" />
+  </Folder>
+</Solution>
