@@ -1,6 +1,6 @@
 # TANSS Sharp API Client
 
-**Ein .NET-Client für die TANSS-REST-API - Getestet gegen TANSS 10.10.**
+**Ein .NET-Client für die TANSS-REST-API - kompatibel zu 10.10.**
 
 ---
 
