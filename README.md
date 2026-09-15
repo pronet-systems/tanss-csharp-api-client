@@ -1,18 +1,6 @@
 # TANSS Sharp API Client
 
-**Ein .NET-Client für die TANSS-REST-API — vollständig, getippt und gegen eine echte Instanz gemessen.**
-
-`Tanss.Api` deckt die gesamte REST-Oberfläche von TANSS ab: 1137 Endpunkte, jeder mit
-typisierten Anfragen und Antworten. Dazu kommt das, was ein Client wirklich braucht, um mit
-TANSS zu sprechen: die richtige Kopfzeile, die richtigen Token, die richtige Behandlung der
-Eigenheiten, die in keiner Dokumentation stehen.
-
-Kein Zwischendienst, keine Abhängigkeit zu einem Herstellerkonto. Die Bibliothek spricht
-unmittelbar mit eurer Instanz.
-
-> **Getestet gegen TANSS 10.10.** Alles, was unter [Gemessen, nicht geraten](#gemessen-nicht-geraten)
-> steht, ist am 2026-09-15 lesend gegen eine produktive 10.10-Installation geprüft. Andere
-> Versionen sollten funktionieren, sind aber nicht gemessen.
+**Ein .NET-Client für die TANSS-REST-API - Getestet gegen TANSS 10.10.**
 
 ---
 
