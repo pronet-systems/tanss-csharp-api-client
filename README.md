@@ -4,8 +4,6 @@
 
 ---
 
-1137 Endpunkte, typisiert, mit Anmeldung, Token-Verwaltung und den Eigenheiten der Schnittstelle.
-Kein Zwischendienst: Die Bibliothek spricht unmittelbar mit eurer Instanz.
 
 ## Installation
 
